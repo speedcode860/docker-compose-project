@@ -1,5 +1,8 @@
 # 🚀 Reaction Game - Architecture Docker Compose Sécurisée
 
+![Interface du Jeu](/interface.png)
+
+
 Ce projet est une application web de jeu de réaction en temps réel (**Reaction Game**) conçue selon une architecture microservices hautement sécurisée et compartimentée grâce à Docker Compose.
 
 L'application utilise un proxy inverse (**Nginx**), une API de gestion de logique métier (**Python / Flask**), un magasin de données en mémoire à faible latence (**Redis**) pour la gestion des états de jeu en temps réel, et une base de données relationnelle (**PostgreSQL**) pour la persistance des scores et des données utilisateurs.
@@ -42,6 +45,9 @@ reaction-game/
 ---
 
 ## 🧩 Description des Services (Microservices)
+
+
+![Architecture Micro service](/architecture_multi_service.png)
 
 ### 1. Nginx Reverse Proxy (`nginx`)
 * **Rôle :** Point d'entrée unique de l'application.Il intercepte les requêtes HTTP externes et les transmet proprement au service API.
